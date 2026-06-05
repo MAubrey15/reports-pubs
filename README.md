@@ -1,18 +1,31 @@
-# React + Vite
+# Reports and Publications
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for browsing and filtering reports and publications using filters and search.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Filter reports by type and year range
+- Search reports by title
+- Pagination support
+- Responsive design with GC Web theme
 
-## React Compiler
+## Files
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `index.html` - Main HTML structure
+- `script.js` - Application logic (jQuery-based)
+- `style.css` - Custom styles
+- `clean_reports.json` - Reports data
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# reports-pubs" 
-"# reports-pubs" 
+1. Clone this repository
+2. Serve the files using a local server (e.g., `python -m http.server 8000`)
+3. Open `http://localhost:8000` in your browser
+
+## Data Structure
+
+Reports in `clean_reports.json` should have:
+- `title` - Report title
+- `type` - Report type/category
+- `year` - Year of publication
+- `link` - URL to the report
